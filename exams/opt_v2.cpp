@@ -51,8 +51,7 @@ void solve() {
                 total += c[i];
             }
         }
-        bool flag = n1_count >= m && n2_count >= m
-                    && (n1_count + n2_count <= l);
+        bool flag = (n1_count <= m) && (n2_count <= m) && (n1_count + n2_count <= l);
         for (int i = 0; i < (n1 + n2); i++) {
             for (int j = i + 1; j < (n1 + n2); j++) {
                 if (v[i] == 1 && v[j] == 1) {
